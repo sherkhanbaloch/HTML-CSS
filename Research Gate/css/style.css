@@ -1,0 +1,333 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Comfortaa:wght@700&family=Roboto:wght@500&display=swap');
+/* font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    background: none;
+    /* background-color: rgba(0, 0, 0, .3); */
+    text-decoration: none;
+    padding: 3px 22px;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+
+.rightNav{
+    display: flex;
+    border: 2px solid black;
+    justify-content: right;
+
+}
+
+
+/* Main Heading */
+.main-heading{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Righteous', cursive;
+}
+
+.main-heading h1{
+    font-size: 60px;
+    padding: 5px 5px;
+}
+
+
+.main-heading h2{
+    font-size: 30px;
+    padding: 5px 5px;
+}
+
+.main-heading h3{
+    font-size: 23px;
+    padding: 5px 5px;
+}
+
+/* Home Section */
+#home{
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home::before{
+    content: "";
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    /* opacity: .5; */
+    
+}
+
+/* Home Section: Director Image */
+#home img{
+    display: inline-block;
+    width: 15%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Home Section: Director Message */
+#home h2{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Home Section: Director Name */
+#home h3{
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    background: yellow;
+    display: inline-block;
+}
+
+/* Home Section: Paragraph */
+#home p{
+    /* color: black; */
+    font-size: 20px;
+    margin-left: 10px;
+    /* margin-top: 10px; */
+    padding: 10px 10px;
+}
+
+/* Admission Section */
+#admission-section{
+    background: #f2f2f2;
+
+}
+
+#admission{
+    display: flex;
+    flex-direction: row;
+    margin: 34px;
+}
+
+#admission .box{
+    /* width: 370px; */
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2px 4px;
+    padding: 10px 10px;
+}
+
+#admission .box img{
+    display: block;
+    margin: auto;
+    /* width: auto; */
+    height: 150px;
+}
+
+#admission p{
+    text-align: justify;
+}
+
+/* Magazine Section */
+#magazine-section{
+    background: #f2f2f2;
+
+}
+
+#magazine{
+    display: flex;
+    margin: 10px 20px;
+   
+}
+
+#magazine img{
+    display: block;
+    width: 300px;
+    margin: 10px 20px;
+}
+
+#first-edition{
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 2px 4px;
+    margin: 4px 10px;
+
+}
+
+#second-edition{
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 2px 4px;
+    margin: 4px 10px;
+}
+
+/* Contact Now Section */
+#contact-us-section{
+    position: relative;
+}
+
+#contact-us-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('../img/contact-us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+
+#contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-us form{
+    width: 35%;
+}
+
+#contact-us input, #contact-us textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    outline: none;
+    margin: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit{
+    cursor: pointer;
+    color:black;
+    background: none;
+    margin: 2px 20px;
+    border: 2px solid black;
+}
+#submit:hover{
+    color: white;
+    background-color: brown;
+}
+
+/* Footer */
+footer{
+        text-align: center;
+        font-size: 1.3rem;
+        color: black;
+        background-color: rgb(238, 195, 238);
+        padding: 10px 20px;
+}
+
+footer a{
+    text-decoration: none;
+
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Righteous', cursive;
+}
+
+.h-secondary{
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    cursor: pointer;
+    color:black;
+    background: none;
+    font-size: 20px;
+    padding: 4px 8px;
+    margin: 2px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn:hover{
+    color: white;
+    background-color: brown;
+}

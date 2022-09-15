@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image img {
+            height: 20vh;
+            width: 10vw;
+            border-radius: 50%;
+            margin: 30px;
+        }
+
+        .name {
+            visibility: hidden;
+            position: absolute;
+            top: 10%;
+            left: 2%;
+            font-family: sans-serif;
+            z-index: -1;
+        }
+
+        .image:hover + .name {
+            visibility: visible;
+            width: 25vw;
+            height: 10vh;
+            left: 10%;
+            transition: all ease 3s;
+        }
+
+        .name p {
+            padding: 4px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="../../../My Pictures/DSC_1204.JPG" alt="Developer Name">
+    </div>
+
+    <div class="name">
+        <p>Afaque Buledi</p>
+        <p>Software Developer</p>
+    </div>
+</body>
+
+</html>
