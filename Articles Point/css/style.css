@@ -1,0 +1,414 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;   
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: #6ab5e7;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo & Image */
+#Logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    width: 65px;
+    margin: 10px 30px;
+}
+
+/* Navigation Bar: List Styling */
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;;
+}
+
+.navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* Navigation Bar: Search Box */
+.search{
+    display: inline-block;
+    margin-left: 200px;
+    /* padding: 6px 6px; */
+    font-family: 'Baloo Bhai 2', cursive;    
+}
+
+.search input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-left: 2px;
+    margin-top: 8px;
+    outline: none;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px 30px;
+    height: 300px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;    
+}
+
+/* Article Section */
+#articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 34px;
+    background-color: #f2f2f2;
+}
+
+#articles p{
+    font-size: 1.1rem;
+    text-align: justify;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Monitor/LCD Article */
+#lcd{
+    height: auto;
+    /* height: 610px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#lcd img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+/* Computer System Unit Article */
+#cpu{
+    height: auto;
+    /* height: 610px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#cpu img{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 150px;
+
+}
+
+/* Mouse Article */
+#mouse{
+    height: auto;
+    /* height: 610px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#mouse img{
+    /* margin-top: 40px; */
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: auto;
+}
+
+/* Keyboard Article */
+#keyboard{
+    height: auto;
+    /* height: 400px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#keyboard img{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 270px;
+    height: auto;
+}
+
+/* Speakers Article */
+#speakers{
+    height: auto;
+    /* height: 400px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#speakers img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: auto;
+}
+
+/* Printer Article */
+#printer{
+    height: auto;
+    /* height: 400px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#printer img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: auto;
+}
+
+/* Thumb Drive/USB Article */
+#usb{
+    height: auto;
+    /* height: 400px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#usb img{
+    display: block;
+    margin: auto;
+    width: 170px;
+    height: auto;
+}
+
+/* Compact Disk (CD) Article */
+#cd{
+    height: auto;
+    /* height: 400px; */
+    width: 270px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 2px 4px;
+}
+
+#cd img{
+    display: block;
+    margin: auto;
+    width: 145px;
+    height: auto;
+}
+
+/* Our Clients Section */
+#clients-section{
+    background-color: #f5f0d6;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    width: 100px;
+}
+
+#clients-items{
+    padding: 2px 50px;
+}
+
+/* About Us Section */
+#about-us-section{
+    position: relative;
+    margin-top: 10px;
+}
+
+#about-us-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    padding: 2px 2px;
+}
+
+
+#about-us img{
+    display: block;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#about-us p{
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Contact Us */
+#contacts-section{
+    position: relative;
+}
+
+#contacts-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts input,
+#contacts textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contacts form{
+    width: 40%;
+}
+    
+#contacts label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#submit:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+    background-color: thistle;
+    padding: 10px 20px;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,143 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    font-family: Arial;
+    font-weight: bold;
+    background-color: #6ab5e7;
+    border-radius: 10px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    padding-top: 10px;
+    margin: 13px 20px;
+}
+
+.navbar li a{
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar li a:hover{
+    color: chartreuse;
+}
+
+.search{
+    float: right;
+    color: white;
+    padding: 20px 30px;
+}
+
+.navbar input{
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 200px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+legend{
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#firstname{
+    margin-left: 27px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#lastname{
+    margin-left: 29px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#fathername{
+    margin-left: 3px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#dateofbirth{
+    margin-left: 14px;
+    width: 170px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#nationality{
+    margin-left: 26px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#gender{
+    margin-left: 49px;
+}
+
+#profilephoto{
+    margin-left: 13px;
+}
+
+#cellnumber{
+    margin-left: 16px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#email{
+    margin-left: 57px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#address{
+    margin-left: 45px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+p{
+    font-family: calibri;
+}
+
+#button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#button:hover{
+    background-color: gray;
+}
+
+footer{
+    background-color: #90bd5b;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a{
+    font-family: sans-serif;
+    text-decoration: none;
+}

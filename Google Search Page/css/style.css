@@ -1,0 +1,178 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: calibri;
+        }
+
+        header {
+            height: 10vh;
+            width: 100%;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul {
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            padding: 0px 12px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header nav img {
+            margin-top: 20px;
+            height: 3vh;
+            padding: 0px 12px;
+        }
+
+        main {
+            height: 80vh;
+            width: 100%;
+        }
+
+        .container {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        span {
+            font-size: 6rem;
+            font-family: sans-serif;
+        }
+
+        span:first-child {
+            color: #4285f4;
+        }
+
+        span:nth-child(2) {
+            color: #ea4335;
+        }
+
+        span:nth-child(3) {
+            color: #fbbc05;
+        }
+
+        span:nth-child(4) {
+            color: #4285f4;
+        }
+
+        span:nth-child(5) {
+            color: #34a853;
+        }
+
+        span:nth-child(6) {
+            color: #ea4335;
+        }
+
+        .developer-name{
+            font-size: small;
+        }
+
+        .search-box {
+            margin-top: 20px;
+            height: 6vh;
+            width: 40%;
+            border: 1px solid gray;
+            border-radius: 30px;
+        }
+
+        .search-box input {
+            height: 5vh;
+            width: 92%;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            margin-left: 2px;
+        }
+
+        .search-box i {
+            margin-left: 20px;
+        }
+
+        .search-box:hover {
+            box-shadow: 1px 1px 15px gray;
+        }
+
+        .logo-btn {
+            margin: 50px;
+        }
+
+        .logo-btn a {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+        }
+
+        .logo-btn a:hover {
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        main p {
+            font-size: 1rem;
+        }
+
+        footer {
+            height: 8vh;
+            width: 100%;
+            font-size: 1rem;
+            background-color: rgb(242 242 242);
+        }
+
+        footer p {
+            height: 4vh;
+            margin: 5px;
+            color: gray;
+            border-bottom: 1px solid gray;
+        }
+
+        .left-footer {
+            float: left;
+            margin: 5px;
+        }
+
+        .left-footer a {
+            text-decoration: none;
+            color: gray;
+            padding: 10px;
+        }
+
+        .left-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .right-footer {
+            margin: 5px;
+            float: right;
+        }
+
+        .right-footer a {
+            text-decoration: none;
+            color: gray;
+            padding: 10px;
+        }
+
+        .right-footer a:hover {
+            text-decoration: underline;
+        }

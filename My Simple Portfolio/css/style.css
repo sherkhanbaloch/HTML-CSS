@@ -1,0 +1,588 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+
+/* Reset CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background: url('../images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
+
+ html{
+    scroll-behavior: smooth; 
+} 
+
+.h-primary{
+    color: crimson;
+    margin-top: 3%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* ********************** Header: Starts Here  **********************************/
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    font-size: 1.2rem;
+}
+
+.logo, .menu{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 4px 15px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.menu a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid white;
+    transition: all 0.5s;
+}
+
+.menu a:hover::before{
+    width: 100%;
+}
+
+.menu ul li .dropdown{
+    display: none;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: crimson;
+}
+.menu ul li:hover .dropdown li{
+    display: block;
+    padding: 10px;
+}
+
+/* ********************** End NavBar Setting  ******************************/
+
+/* ********************** Section: Home Starts Here *************************/
+#home-section{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url('../images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name p{
+    padding: 2%;
+}
+
+.vector-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vector-img img{
+    height: 40vh;
+}
+
+.changeText::after{
+    content: "";
+    color: crimson;
+    font-size: larger;
+    font-weight: bold;
+    animation: changeText 6s infinite linear;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@keyframes changeText{
+    0%{
+        content: "CS Student";
+    }
+    25%{
+        content: "Developer";
+    }
+    50%{
+        content: "YouTuber";
+    }
+    75%{
+        content: "Programmer";
+    }
+    100%{
+        content: "Freelancer";
+    }
+}
+
+.home-btns{
+    margin-top: 3%;
+}
+
+.home-btns a{
+    background: crimson;
+    padding: 12px 36px;
+    font-size: 25px;
+    color: white;            
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 1s linear;
+}
+
+.home-btns a:hover{
+    border: 2px solid crimson;
+    color: crimson;
+    background: none;
+}
+
+/* ********************** End Home Section ******************** */
+
+/* ********************* About Me Section ********************* */
+
+#about-section{
+    width: 100%;
+    height: 80vh;
+}
+
+.about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.profile img{
+    height: 40vh;
+    border-radius: 6px;
+}
+
+.about-text{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-text p{
+    padding: 4% 4%;
+    font-size: larger;
+    line-height: 5vh;
+}
+
+.about-text-span{
+    color: crimson;
+
+}
+
+.about-btn{
+    padding: 0% 4%;
+}
+
+.about-btn a{
+    background: crimson;
+    padding: 12px 36px;
+    font-size: 25px;
+    color: white;            
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 1s linear;
+    font-family: 'Ubuntu', sans-serif;   
+}
+
+.about-btn a:hover{
+    border: 2px solid crimson;
+    color: crimson;
+    background: none;
+}
+
+/* End About Me Section */
+
+
+/* Services Section Start */
+
+#services-section{
+    width: 100%;
+    height: 60vh;    
+}
+
+.services{
+    height: 50vh;
+    display: flex;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box h2{
+    color: crimson;
+    padding-top: 2%;
+    text-align: center;
+    border-bottom: 2px solid crimson;
+}
+
+.box{
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 20vw;
+    height: 35vh;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 6px gray;
+    z-index: -1;
+}
+
+.box img{
+    padding-top: 10%;
+    height: 25vh;
+    width: auto;
+}
+
+/* Skills Section */
+#skills-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(144, 209, 241, 0.3), rgba(0, 196, 241, 0.3));
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 85%, 50% 100%, 0% 85%, 0 0);
+    position: relative;
+    z-index: -1;
+}
+
+.skills-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills{
+    margin-top: 5%;
+    width: 60%;
+    line-height: 3vh;
+}
+
+.skills h4{
+    padding: 10px 0px 0px 4px;
+}
+
+.html, .css, .bootstrap, .wordpress, .java, .sql{
+    margin: 4px 4px;
+    height: 1vh;
+}
+
+.html{
+    width: 80%;
+    background:  red;
+}
+
+.css{
+    width: 80%;
+    background:  green;
+}
+
+.bootstrap{
+    width: 50%;
+    background:  rgb(120, 61, 197);
+}
+
+.wordpress{
+    width: 50%;
+    background:  orangered;
+}
+
+.java{
+    width: 70%;
+    background: blue;
+}
+
+.sql{
+    width: 50%;
+    background: teal;
+}
+
+.add-skills{
+    line-height: 5vh;
+    font-weight: bold;
+}
+
+.add-skills-span{
+    color: crimson;
+}
+
+/* Projects Section */
+
+#projects-section{
+    width: 100%;
+    height: 50vh;
+}
+
+.projects{
+    display: flex;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards{
+   margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 13vw;
+    height: 25vh;
+}
+
+.cards img{
+    height: 10vh;
+}
+
+.projects a{
+    color: crimson;
+    border: 2px solid crimson;
+    padding: 4px 8px;
+    font-size: 1.5rem;          
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 1s linear;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.projects a:hover{
+    color: white;
+    background-color: crimson;
+}
+
+
+/* ********************* Contacts Section ********************* */
+
+#contacts-section{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/contact-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-my-details{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    flex-direction: column;
+    font-size: larger;
+    line-height: 8vh;
+}
+
+.contact-my-details p a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-form input{
+    background: none;
+    font-size: larger;
+    width: 70%;
+    height: 10vh;
+    margin: 8px 0px;
+    padding: 8px 8px;
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.contact-form textarea{
+    background: none;
+    font-size: larger;
+    width: 70%;
+    height: 30vh;
+    margin: 8px 0px;
+    padding: 8px 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-submit{
+    display: inline-block;
+    outline: none;
+    font-size: 1.3rem;
+    color: white;
+    background: crimson;
+    border: 2px solid crimson    ;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif; 
+    transition: all 1s linear;
+    padding: 12px 36px;
+    
+}
+
+.btn-submit:hover{
+    background: none;
+    color: crimson;
+}
+
+/* ********************* Footer ************************ */
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #222;
+}
+.footer{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icons a{
+    padding: 10px;
+   text-decoration: none;
+   
+}
+/*
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-twitter{
+    color:  #55acee;
+}
+
+.fa-instagram{
+    color: #e84393;
+}
+
+.fa-linkedin{
+    color: #0976b4;
+}
+*/
+.footer-text{
+  text-align: center;
+}
+
+.footer-text p{
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.footer-text a{
+    color: white;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}

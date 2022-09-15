@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        input[type="text"] {
+            color: red;
+        }
+
+        a[href="https://www.google.com"] {
+            color: aqua;
+        }
+
+        /* All Links Containing google */
+        a[href *="google"] {
+            color: aqua;
+        }
+
+        /* Starts With https */
+        a[href ^="https"] {
+            color: green;
+        }
+
+        /* Ends With .com */
+        a[href $=".com"] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

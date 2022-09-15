@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 67vw;
+    margin: auto;
+    border: 2px solid black;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.profile_pic img {
+    width: 5vw;
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img {
+    margin-top: 2vh;
+    margin-left: 28vw;
+    width: 8vw;
+}
+
+.logo_half {
+    text-align: right;
+    margin-left: 10vw;
+    margin-top: 2vh;
+    line-height: 4vh;
+}
+
+.skyblue_line{
+    margin-top: 2vh;
+    background-color: skyblue;
+}
+
+.details{
+    display: flex;
+    padding: 2vh 4vw;
+    font-weight: bold;
+}
+
+.details2{
+    padding: 0vh 1vw;
+}
+
+.qr_code{
+    margin-left: 20vw;
+
+}
+
+.qr_code img{
+    width: 5vw;
+}
+
+/* Table CSS: Starts Here */
+
+table::before{
+    content: "";
+    position: absolute;
+    background: url(../images/logo.jpg) no-repeat center center/cover;
+    height: 40%;
+    width: 40%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+th {
+    background-color: gray;
+    font-weight: bold;
+}
+
+.marks_table{
+    padding: 2vh 4vw;
+}
+
+.subjects {
+    width: 20vw;
+    text-align: left;
+    padding: 0px 4px;
+}
+
+.remarks {
+    width: 13vw;
+}
+
+.grace_marks {
+    text-align: right;
+}
+
+.obt_words {
+    text-align: left;
+}
+
+.under_table{
+    padding: 0vh 4vw;
+    display: flex;
+}
+
+.covid_note{
+    border: 2px solid black;
+    padding: 1vh 1vw;
+    margin: 2vh 2vw;
+}
+
+/* Footer */
+/* footer{
+    border: 2px solid black;
+    display: flex;
+    height: 15vh;
+    background-color: #abdcf1;
+}
+
+footer p{
+    padding: 0vh 4vw;
+    
+} */
+
+
+/* Utility Classes */
+.bold_property{
+    font-weight: bold;
+}
+
+.big_font{
+    font-size: 1.1rem;
+}
+
+.small_font{
+    font-size: 0.8rem;
+}

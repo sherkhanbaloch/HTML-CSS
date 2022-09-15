@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Join Us </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Join Us.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="Computer.html"> Home</a> </li>
+                <li> <a href="About Developer.html"> About Developer</a> </li>
+                <li> <a href="Join Us.html"> Join Us</a> </li>
+                <div class="search"> Search: 
+                    <input type="search" name="search" id="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <h2> If You Want To Join Us So Kindly Submit Your Form </h2>
+
+    <form action="backend.php">
+        <fieldset>
+            <legend> Personal Information: </legend>
+            <p>
+                First Name: <input type="text" id="firstname" placeholder="Enter First Name" required> <br> <br>
+                Last Name: <input type="text" id="lastname" placeholder="Enter Last Name" required> <br> <br>
+                Father's Name: <input type="text" id="fathername" placeholder="Enter Father's Name" required> <br> <br>
+                Date of Birth: <input type="Date" id="dateofbirth" placeholder="Enter Date of Birth" required> <br> <br>
+                Nationality: <input type="text" id="nationality" placeholder="Enter Country Name" required> <br> <br>
+                Gender: <input type="radio" name="gender" id="gender" required>Male
+                <input type="radio" name="gender" required>Female <br> <br>
+                Profile Photo: <input type="file" id="profilephoto" accept="image/*" required>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Qualification Information: </legend>
+            <p>
+                Qualification: <input type="checkbox" name="qualification"> BSCS
+                <input type="checkbox" name="qualification"> MSCS
+                <br> <br>
+                Programming Languages: <input type="checkbox" name="programming lanuages">C
+                <input type="checkbox" name="programming lanuages">C++
+                <input type="checkbox" name="programming lanuages">C#
+                <input type="checkbox" name="programming lanuages">Java
+                <input type="checkbox" name="programming lanuages">Python
+                <input type="checkbox" name="programming lanuages">Php
+                <input type="checkbox" name="programming lanuages">SQL
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Contact Information: </legend>
+            <p>
+                Cell Number: <input type="tel" id="cellnumber" placeholder="Enter Phone Number" required> <br> <br>
+                E-mail: <input type="E-mail" id="email" placeholder="Enter E-mail" required> <br> <br>
+                Address: <textarea name="address" id="address" cols="22" rows="3"> </textarea>
+            </p>
+        </fieldset>
+        <br>
+        <input type="checkbox"> Agree with terms and conditions
+
+        <br> <br>
+        <button type="submit" value="submit" id="button"
+            onclick="alert('Thank you for join us. we will Contact you as soon as posible')">Submit Form </button>
+
+
+    </form>
+
+    <footer>
+        <p> &copy; Copyright 2020 - All  rights reserved </p>   
+        <p> Powered by Afaque Jaan </p>   
+        <a href="#">Terms & Conditions - </a>   
+        <a href="#">Privacy - </a>  
+        <a href="#">Back to Top</a>  
+    </footer>
+
+</body>
+
+
+</html>
